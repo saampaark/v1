@@ -32,7 +32,7 @@ export default function App() {
             <p className="paragraph">
               I'm currently studying Computer Science at the University of Waterloo. 
               When I'm not coding, I enjoy swimming, watching football, 
-              exploring new places, and doomscrolling.
+              exploring new places, and spending time with friends.
             </p>
 
             <div className="experience">
