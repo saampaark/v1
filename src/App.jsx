@@ -16,7 +16,7 @@ export default function App() {
         <div className="content-box">
           <div className="liquid-background">
             <LiquidChrome
-              baseColor={theme === 'dark' ? [0.08, 0.08, 0.08] : [0.95, 0.95, 0.95]}
+              baseColor={theme === 'dark' ? [0.08, 0.08, 0.08] : [0.75, 0.75, 0.75]}
               speed={0.3}
               amplitude={0.4}
               frequencyX={3}
