@@ -38,15 +38,15 @@ export default function App() {
             <div className="experience">
               <div className="experience-item">
                 <span className="arrow">→</span>
-                <span>Software Engineer at Shopify</span>
+                <span>Software Engineer | Shopify | 2026</span>
               </div>
               <div className="experience-item">
                 <span className="arrow">→</span>
-                <span>Senior Data Quality Specialist at Cohere</span>
+                <span>Senior Data Quality Specialist | Cohere | 2025</span>
               </div>
               <div className="experience-item">
                 <span className="arrow">→</span>
-                <span>Software Engineer at Zomp</span>
+                <span>Software Engineer | Zomp | 2025</span>
               </div>
             </div>
 
