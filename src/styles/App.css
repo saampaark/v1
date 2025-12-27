@@ -1,0 +1,45 @@
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: var(--page-bg);
+  color: var(--text);
+  transition: background 0.4s ease, color 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background: var(--button-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--button-border);
+  color: var(--text);
+  padding: 8px 18px;
+  border-radius: 0;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 11px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.theme-toggle:focus {
+  outline: none;
+}
+
+.theme-toggle:hover {
+  background: var(--text);
+  color: var(--box-bg);
+  transform: translateY(-1px);
+}

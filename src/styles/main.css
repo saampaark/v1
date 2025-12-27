@@ -1,0 +1,144 @@
+.content {
+  position: relative;
+  z-index: 5;
+  max-width: 700px;
+  width: 100%;
+  animation: fadeIn 1.2s ease-out;
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+.content-box {
+  position: relative;
+  border: 1px solid var(--border);
+  background: var(--box-bg);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.liquid-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.content-inner {
+  position: relative;
+  z-index: 2;
+  padding: 56px;
+}
+
+.heading {
+  font-size: clamp(20px, 3vw, 24px);
+  font-weight: 700;
+  margin-bottom: 28px;
+  line-height: 1.3;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+.paragraph {
+  font-size: clamp(14px, 1.5vw, 13px);
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 44px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: clamp(14px, 1.5vw, 13px);
+  color: var(--text-muted);
+  text-align: left;
+  transition: all 0.3s ease;
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+.experience-item:hover {
+  color: var(--text);
+  transform: translateX(4px);
+}
+
+.arrow {
+  color: var(--text);
+  font-size: clamp(14px, 1.5vw, 13px);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.footer {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  color: var(--text);
+  text-decoration: none;
+  font-size: clamp(14px, 1.5vw, 13px);
+  font-weight: 400;
+  transition: all 0.2s ease;
+  position: relative;
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--text);
+  transition: width 0.2s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+}
+
+.separator {
+  color: var(--text-dim);
+  font-size: clamp(14px, 1.5vw, 13px);
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .content-inner {
+    padding: 36px 28px;
+  }
+}
